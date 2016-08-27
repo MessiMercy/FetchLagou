@@ -1,0 +1,32 @@
+{
+	"companyId": 0,
+	"companyName": "当乐",
+	"companyProfile": "煞笔速来",
+	"city": "成都",
+	"resumeProcessRate": 0,
+	"resumeProcessTime": 0,
+	"experienceCount": 0,
+	"interviewExperiences": [{
+		"id": 0,
+		"userId": 0,
+		"usefulCount": 0,
+		"myScore": 1,
+		"describeScore": 0,
+		"interviewerScore": 0,
+		"companyScore": 1,
+		"content": "领导是煞笔",
+		"positionName": "小喽啰",
+		"companyName": "当乐"
+	}],
+	"positionInfos": [{
+		"companyId": 0,
+		"positionId": 0,
+		"userId": 0,
+		"companyName": "当乐",
+		"companyFullName": "当乐科技有限公司",
+		"companySize": "200+",
+		"city": "成都",
+		"district": "高新区"
+	}],
+	"positionCount": 0
+}
