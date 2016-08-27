@@ -18,7 +18,7 @@ public class TestMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String job = "{'labels': ['¼¨Ğ§½±½ğ','´øĞ½Äê¼Ù','×¨Ïî½±½ğ','½ÚÈÕÀñÎï','Ë§¸ç¶à','¹ÜÀí¹æ·¶','¼¼ÄÜÅàÑµ','Áìµ¼ºÃ','Äê¶ÈÂÃÓÎ'],'baseInfo': {'companyId': 45496,'industryField': 'ÆäËû,ÆóÒµ·şÎñ','companySize': '2000ÈËÒÔÉÏ','city': '³É¶¼','financeStage': 'Î´ÈÚ×Ê'},'leaders': [],'userType': false,'history': [],'pageType': 1,'coreInfo': {'companyId': 45496,'logo': 'i/image/M00/03/DC/Cgp3O1bEFraAThpjAAATlD6XITM677.jpg','companyName': '³É¶¼Á´¼Ò·¿µØ²ú¾­¼ÍÓĞÏŞ¹«Ë¾','companyShortName': 'Á´¼Ò','approve': 0,'companyUrl': '','companyIntroduce': 'Ñ¡ÔñÁ´¼Ò£¬Ñ¡Ôñ³É¹¦','isFirst': false},'dataInfo': {'positionCount': 7,'resumeProcessRate': 92,'resumeProcessTime': 2,'experienceCount': 4,'lastLoginTime': '½ñÌì'},'companyId': 45496,'products': [],'introduction': {'companyId': 45496,'companyProfile': 'Á´¼Ò³ÉÁ¢ÓÚ2001Äê£¬Ä¿Ç°ÒÑ¸²¸Ç±±¾©¡¢ÉÏº£¡¢ÉîÛÚ¡¢ÖØÇì¡¢´óÁ¬¡¢Ìì½ò¡¢ÄÏ¾©¡¢³É¶¼¡¢Çàµº¡¢º¼ÖİµÈ29¸ö³ÇÊĞ£¬ÃÅµêÔ¼6000¼Ò£¬ÆìÏÂ¾­¼ÍÈË³¬¹ı5ÍòÃû£¬2015Äê½»Ò×¶îÔ¤¼Æ½«´ï4000ÒÚÔª¡£\n<br />³É¶¼Á´¼ÒÓÚ2011Äê10ÔÂÕıÊ½½ø×¤³É¶¼£¬ÒÔ³É¶¼ÊĞ¶şÊÖ·¿ÂòÂô¡¢×âÁŞ¡¢ĞÂ·¿·ÖÏú¡¢ÉÌÒµµØ²ú¡¢½ğÈÚ°´½Ò·şÎñÎªÖ÷£¬½ØÖ¹2015Äê12ÔÂ³É¶¼Á´¼ÒÃÅµêÒÑÓĞ500Óà¼Ò£¬×ÅÁ¦´òÔìÎªÖĞ¹úÎ÷ÄÏÇøÓòµØ²ú¾­¼ÍµÄº½¿ÕÄ¸½¢£¡','pictures': []},'isCompanyHr': false}";
+		String job = "{'labels': ['ç»©æ•ˆå¥–é‡‘','å¸¦è–ªå¹´å‡','ä¸“é¡¹å¥–é‡‘','èŠ‚æ—¥ç¤¼ç‰©','å¸…å“¥å¤š','ç®¡ç†è§„èŒƒ','æŠ€èƒ½åŸ¹è®­','é¢†å¯¼å¥½','å¹´åº¦æ—…æ¸¸'],'baseInfo': {'companyId': 45496,'industryField': 'å…¶ä»–,ä¼ä¸šæœåŠ¡','companySize': '2000äººä»¥ä¸Š','city': 'æˆéƒ½','financeStage': 'æœªèèµ„'},'leaders': [],'userType': false,'history': [],'pageType': 1,'coreInfo': {'companyId': 45496,'logo': 'i/image/M00/03/DC/Cgp3O1bEFraAThpjAAATlD6XITM677.jpg','companyName': 'æˆéƒ½é“¾å®¶æˆ¿åœ°äº§ç»çºªæœ‰é™å…¬å¸','companyShortName': 'é“¾å®¶','approve': 0,'companyUrl': '','companyIntroduce': 'é€‰æ‹©é“¾å®¶ï¼Œé€‰æ‹©æˆåŠŸ','isFirst': false},'dataInfo': {'positionCount': 7,'resumeProcessRate': 92,'resumeProcessTime': 2,'experienceCount': 4,'lastLoginTime': 'ä»Šå¤©'},'companyId': 45496,'products': [],'introduction': {'companyId': 45496,'companyProfile': 'é“¾å®¶æˆç«‹äº2001å¹´ï¼Œç›®å‰å·²è¦†ç›–åŒ—äº¬ã€ä¸Šæµ·ã€æ·±åœ³ã€é‡åº†ã€å¤§è¿ã€å¤©æ´¥ã€å—äº¬ã€æˆéƒ½ã€é’å²›ã€æ­å·ç­‰29ä¸ªåŸå¸‚ï¼Œé—¨åº—çº¦6000å®¶ï¼Œæ——ä¸‹ç»çºªäººè¶…è¿‡5ä¸‡åï¼Œ2015å¹´äº¤æ˜“é¢é¢„è®¡å°†è¾¾4000äº¿å…ƒã€‚\n<br />æˆéƒ½é“¾å®¶äº2011å¹´10æœˆæ­£å¼è¿›é©»æˆéƒ½ï¼Œä»¥æˆéƒ½å¸‚äºŒæ‰‹æˆ¿ä¹°å–ã€ç§Ÿèµã€æ–°æˆ¿åˆ†é”€ã€å•†ä¸šåœ°äº§ã€é‡‘èæŒ‰æ­æœåŠ¡ä¸ºä¸»ï¼Œæˆªæ­¢2015å¹´12æœˆæˆéƒ½é“¾å®¶é—¨åº—å·²æœ‰500ä½™å®¶ï¼Œç€åŠ›æ‰“é€ ä¸ºä¸­å›½è¥¿å—åŒºåŸŸåœ°äº§ç»çºªçš„èˆªç©ºæ¯èˆ°ï¼','pictures': []},'isCompanyHr': false}";
 		Type type = new TypeToken<CompanyInfo>() {
 		}.getType();
 		Gson gson = new GsonBuilder().create();
@@ -39,19 +39,19 @@ public class TestMain {
 		CompanyInfo info2 = new CompanyInfo();
 		InterviewExperience experience = new InterviewExperience();
 		PositionInfo positionInfo = new PositionInfo();
-		info2.setCity("³É¶¼");
-		info2.setCompanyProfile("É·±ÊËÙÀ´");
-		info2.setCompanyName("µ±ÀÖ");
-		positionInfo.setCompanyFullName("µ±ÀÖ¿Æ¼¼ÓĞÏŞ¹«Ë¾");
-		positionInfo.setCompanyName("µ±ÀÖ");
-		positionInfo.setCity("³É¶¼");
+		info2.setCity("æˆéƒ½");
+		info2.setCompanyProfile("é€Ÿæ¥");
+		info2.setCompanyName("å½“ä¹");
+		positionInfo.setCompanyFullName("å½“ä¹ç§‘æŠ€æœ‰é™å…¬å¸");
+		positionInfo.setCompanyName("å½“ä¹");
+		positionInfo.setCity("æˆéƒ½");
 		positionInfo.setCompanySize("200+");
-		positionInfo.setDistrict("¸ßĞÂÇø");
-		experience.setCompanyName("µ±ÀÖ");
+		positionInfo.setDistrict("é«˜æ–°åŒº");
+		experience.setCompanyName("å½“ä¹");
 		experience.setCompanyScore(1);
-		experience.setContent("Áìµ¼ÊÇÉ·±Ê");
+		experience.setContent("é¢†å¯¼");
 		experience.setMyScore(1);
-		experience.setPositionName("Ğ¡à¶†ª");
+		experience.setPositionName("å°å–½å•°");
 		List<PositionInfo> positionInfos = new ArrayList<>();
 		List<InterviewExperience> interviewExperiences = new ArrayList<>();
 		positionInfos.add(positionInfo);
