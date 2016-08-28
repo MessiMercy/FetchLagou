@@ -1,0 +1,66 @@
+拉勾：
+GET : http://www.lagou.com/zhaopin/   li.con_list_item元素下找到 data-companyid的值为公司id data-company为公司名
+
+POST : http://www.lagou.com/gongsi/searchPosition.json
+FORM DATA:
+companyId:141975
+positionFirstType:全部
+pageNo:1
+pageSize:10
+得到所有招聘信息
+
+GET : http://www.lagou.com/gongsi/45496.html script[id=interviewExperiencesData] text下找到公司评价  script[id=companyInfoData] text下找到公司信息
+
+
+
+搜索1：
+Request URL:http://www.lagou.com/jobs/positionAjax.json?city=%E6%88%90%E9%83%BD&needAddtionalResult=false
+Request Method:POST
+
+queryString：
+city:成都
+needAddtionalResult:false
+
+FormData:
+first:true
+pn:1
+kd:当乐
+
+HEADER:
+Origin:http://www.lagou.com
+Referer:http://www.lagou.com/jobs/list_%E5%BD%93%E4%B9%90?city=%E6%88%90%E9%83%BD&cl=false&fromSearch=true&labelWords=&suginput=
+User-Agent:Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+X-Anit-Forge-Code:0
+X-Anit-Forge-Token:None
+X-Requested-With:XMLHttpRequest
+
+RESPONSE:
+{"success":true,"requestId":null,"msg":null,"resubmitToken":null,"content":{"pageNo":1,"pageSize":15,"positionResult":{"resultSize":11,"locationInfo":{"city":"成都","district":null,"businessZone":null,"queryByGisCode":false,"locationCode":null},"queryAnalysisInfo":{"positionName":null,"companyName":"当乐","industryName":null,"usefulCompany":true},"strategyProperty":{"name":"dm-csearch-newSimScorer","id":1},"totalCount":11,"result":[{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472203878000,"publisherId":4756506,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":2064880,"industryField":"移动互联网","education":"本科","workYear":"不限","city":"成都","positionAdvantage":"五险一金、团队活动、节假日福利、高额补贴","createTime":"2016-08-26 11:05:01","salary":"3k-4k","positionName":"游戏用户运营","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472203878000,"publisherId":4756506,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":2069400,"industryField":"移动互联网","education":"不限","workYear":"不限","city":"成都","positionAdvantage":"五险一金、团队活动、节假日福利、高额补贴","createTime":"2016-08-26 11:04:58","salary":"2k-4k","positionName":"游戏客服","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472203878000,"publisherId":4756506,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":2251746,"industryField":"移动互联网","education":"本科","workYear":"5-10年","city":"成都","positionAdvantage":"五险一金、高额补贴、团队活动","createTime":"2016-08-26 11:05:02","salary":"15k-30k","positionName":"游戏主策划","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472203878000,"publisherId":4756506,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":2292949,"industryField":"移动互联网","education":"本科","workYear":"5-10年","city":"成都","positionAdvantage":"五险一金、高额补贴、团队活动、节假日福利","createTime":"2016-08-26 13:37:04","salary":"15k-30k","positionName":"游戏制作人","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472191692000,"publisherId":1497949,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":1669706,"industryField":"移动互联网","education":"大专","workYear":"1-3年","city":"成都","positionAdvantage":"五险一金、团队活动、下午茶、各种补贴","createTime":"2016-08-26 10:44:45","salary":"3k-4k","positionName":"游戏用户运营专员","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472191692000,"publisherId":1497949,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":1637733,"industryField":"移动互联网","education":"大专","workYear":"1-3年","city":"成都","positionAdvantage":"五险一金、团队活动、补贴、下午茶","createTime":"2016-08-26 10:44:37","salary":"4k-8k","positionName":"平台推广&amp;活动策划专员","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472191692000,"publisherId":1497949,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":1787650,"industryField":"移动互联网","education":"大专","workYear":"3-5年","city":"成都","positionAdvantage":"五险一金、团队活动、生活补贴","createTime":"2016-08-26 10:44:38","salary":"8k-13k","positionName":"Java工程师","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472191692000,"publisherId":1497949,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":2109652,"industryField":"移动互联网","education":"本科","workYear":"3-5年","city":"成都","positionAdvantage":"五险一金、团队活动、节假日福利、高额补贴","createTime":"2016-08-26 10:44:39","salary":"5k-8k","positionName":"社区运营","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":27626,"formatCreateTime":"2天前发布","imState":"threeDays","businessZones":null,"lastLogin":1472191692000,"publisherId":1497949,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":2236593,"industryField":"移动互联网","education":"大专","workYear":"不限","city":"成都","positionAdvantage":"五险一金、高额补贴、节假日福利","createTime":"2016-08-26 10:44:50","salary":"3k-6k","positionName":"手游带队（子公司岗位）","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":null,"score":0},{"companyId":27626,"formatCreateTime":"2016-08-18","imState":"threeDays","businessZones":null,"lastLogin":1472203878000,"publisherId":4756506,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"成都当乐科技有限公司","adWord":0,"positionId":1853741,"industryField":"移动互联网","education":"大专","workYear":"3-5年","city":"成都","positionAdvantage":"五险一金、生活补贴、团队活动","createTime":"2016-08-18 14:06:34","salary":"8k-15k","positionName":"中级Java开发工程师","companySize":"150-500人","companyShortName":"当乐网","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["绩效奖金","年底双薪","五险一金","通讯津贴"],"district":"高新区","score":0},{"companyId":13595,"formatCreateTime":"2016-08-19","imState":"overSevenDays","businessZones":null,"lastLogin":1471573303000,"publisherId":311806,"explain":null,"plus":null,"pcShow":0,"appShow":0,"deliver":0,"gradeDescription":null,"companyFullName":"北京当乐信息技术有限公司","adWord":0,"positionId":824157,"industryField":"移动互联网,游戏","education":"本科","workYear":"1-3年","city":"成都","positionAdvantage":"五险一金 补助齐全","createTime":"2016-08-19 10:29:04","salary":"6k-8k","positionName":"Java服务端开发工程师（成都）","companySize":"500-2000人","companyShortName":"当乐","companyLogo":"image1/M00/00/1A/CgYXBlTUWFeAQqvSAABMFAg2bT8367.jpg","financeStage":"成长型(B轮)","jobNature":"全职","approve":1,"companyLabelList":["技能培训","节日礼物","带薪年假","绩效奖金"],"district":"高新区","score":0}]}},"code":0}
+
+
+
+
+
+搜索2：
+Request URL:http://www.lagou.com/jobs/companyAjax.json?city=%E6%88%90%E9%83%BD&needAddtionalResult=false
+Request Method:POST
+
+FormData：
+first:true
+pn:1
+kd:当乐
+
+QueryString:
+city:成都
+needAddtionalResult:false
+
+HEADER:
+Origin:http://www.lagou.com
+Referer:http://www.lagou.com/jobs/list_%E5%BD%93%E4%B9%90?city=%E6%88%90%E9%83%BD&cl=false&fromSearch=true&labelWords=&suginput=
+User-Agent:Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+X-Anit-Forge-Code:0
+X-Anit-Forge-Token:None
+X-Requested-With:XMLHttpRequest
+
+RESPONSE:
+{"success":true,"requestId":null,"msg":null,"resubmitToken":null,"code":0,"content":{"pageNo":1,"pageSize":15,"totalCount":2,"hasNextPage":false,"totalPageCount":1,"currentPageNo":1,"hasPreviousPage":false,"result":[{"createTime":null,"companyId":13595,"companyFullName":"北京当乐信息技术有限公司","positionNum":3,"companyShortName":"当乐","city":"北京","companyLogo":"image1/M00/00/1A/CgYXBlTUWFeAQqvSAABMFAg2bT8367.jpg","financeStage":"成长型(B轮)","industryField":"移动互联网,游戏","approve":1,"companyFeatures":"手机游戏第一站","interviewRemarkNum":12,"processRate":45,"cityScore":0,"countryScore":0},{"createTime":null,"companyId":27626,"companyFullName":"成都当乐科技有限公司","positionNum":10,"companyShortName":"当乐网","city":"成都","companyLogo":"i/image/M00/4E/8D/Cgp3O1erz0KAbpotAACLMSziVLE286.png","financeStage":"成长型(B轮)","industryField":"移动互联网","approve":1,"companyFeatures":"d.cn当乐网 手机游戏第一平台","interviewRemarkNum":0,"processRate":96,"cityScore":0,"countryScore":0}],"start":0}}
