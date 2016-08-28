@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
@@ -15,7 +16,6 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
 public class FetchTargetText {
@@ -55,7 +55,7 @@ public class FetchTargetText {
 		return html;
 	}
 
-	public static String postEntity(HttpClient client, String url, List<BasicNameValuePair> list, String json,
+	public static String postEntity(HttpClient client, String url, List<NameValuePair> list, String json,
 			HashMap<String, String> headers, String charset) {
 		HttpPost post = new HttpPost(url);
 		if (charset == null) {
@@ -76,6 +76,7 @@ public class FetchTargetText {
 			UrlEncodedFormEntity entity = null;
 			try {
 				entity = new UrlEncodedFormEntity(list, charset);
+				System.out.println("0.0.0.0.0." + entity.toString() + "0.0.0.0.0.0");
 			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
 			}

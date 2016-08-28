@@ -5,8 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Filepipeline {
-	public static void printResult(String resource, boolean append) {
-		File resultFile = new File("test.txt");
+	public void printResult(String resource, boolean append, String toFileName) {
+		if (resource == null) {
+			return;
+		}
+		File resultFile = new File(toFileName);
 		if (!resultFile.exists()) {
 			try {
 				resultFile.createNewFile();
@@ -18,7 +21,6 @@ public class Filepipeline {
 		try {
 			writer = new FileWriter(resultFile, append);
 			writer.write(resource + "\r\n");
-			writer.close();
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		} finally {

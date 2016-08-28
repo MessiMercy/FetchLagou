@@ -24,6 +24,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.conn.ssl.TrustSelfSignedStrategy;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpRequestRetryHandler;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -33,15 +34,15 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.ssl.SSLContextBuilder;
 
 public class CrawlerLib {
-	static CloseableHttpClient client = getInstanceClient(true);
-	// static MongoClient mongoClient = new MongoClient("localhost", 27017);
-	// static MongoDatabase database = mongoClient.getDatabase("mydb");
-	// static MongoCollection<org.bson.Document> collection =
+	// private static BasicCookieStore store = new BasicCookieStore();
+
+	// MongoClient mongoClient = new MongoClient("localhost", 27017);
+	// MongoDatabase database = mongoClient.getDatabase("mydb");
+	// MongoCollection<org.bson.Document> collection =
 	// database.getCollection("taobao");
-
-	public static void main(String[] args) {
-
-	}
+	// public void main(String[] args) {
+	//
+	// }
 
 	public static HttpUriRequest getResponse(String url, List<NameValuePair> list, Header[] headers, HttpHost proxy) {
 		RequestConfig.Builder configBuilder = RequestConfig.custom().setConnectTimeout(6000).setSocketTimeout(6000)
@@ -102,6 +103,7 @@ public class CrawlerLib {
 	 * 根据需要初始化httpclient
 	 */
 	public static CloseableHttpClient getInstanceClient(boolean isNeedProxy) {
+		BasicCookieStore store = new BasicCookieStore();
 		CloseableHttpClient httpClient;
 		// SSLContext sslContext = SSLContexts.createSystemDefault();
 		// SSLConnectionSocketFactory sslsf = new
@@ -128,7 +130,8 @@ public class CrawlerLib {
 		manager.setDefaultMaxPerRoute(100); // 单路由最大连接数
 		HttpRequestRetryHandler handler = new DefaultHttpRequestRetryHandler(2, true);
 		HttpClientBuilder builder = HttpClients.custom().setRetryHandler(handler).setConnectionManager(manager)
-				.setConnectionTimeToLive(6000, TimeUnit.SECONDS).setSSLSocketFactory(sslsf).setUserAgent(getAgent());
+				.setConnectionTimeToLive(6000, TimeUnit.SECONDS).setSSLSocketFactory(sslsf).setDefaultCookieStore(store)
+				.setUserAgent(getAgent());
 		if (isNeedProxy) {
 			HttpHost proxy = new HttpHost("127.0.0.1", 1080);// 设置代理ip
 			DefaultProxyRoutePlanner routePlanner = new DefaultProxyRoutePlanner(proxy);
@@ -166,4 +169,5 @@ public class CrawlerLib {
 	String ensureNotEmpty(String str) {
 		return str.equals("") ? "no value" : str;
 	}
+
 }

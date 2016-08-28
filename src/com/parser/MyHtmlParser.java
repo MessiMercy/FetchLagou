@@ -25,19 +25,24 @@ public class MyHtmlParser {
 			doc = Jsoup.parse(html);
 			setDocument(doc);
 			Elements elements = doc.select(rule);
-			// System.out.println("正在采集" + url + "的" + rule);
-			// if (isAttrOrText != null) {
-			// result.append(element.attr(isAttrOrText));
-			// } else {
-			// result.append(element.text());
-			// }
-			if (isAttrOrText != null) {
-				for (Element element : elements) {
-					result.push(element.attr(isAttrOrText));
-				}
-			} else {
-				for (Element element : elements) {
-					result.push(element.text());
+			System.out.println("parseHtml :　" + elements.size());
+			if (elements != null) {
+				if (isAttrOrText != null) {
+					for (Element element : elements) {
+						result.push(element.attr(isAttrOrText));
+					}
+				} else {
+					for (Element element : elements) {
+						String str = element.text();
+						if (str.length() < 5) {
+							result.push(element.html());
+							System.out.println("得到元素html");
+							System.out.println(element.html());
+						} else {
+							result.push(str);
+							System.out.println("what the fuck: " + str);
+						}
+					}
 				}
 			}
 		}
