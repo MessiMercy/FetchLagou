@@ -9,6 +9,8 @@ import java.util.Stack;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 import com.downloader.CrawlerLib;
 import com.downloader.FetchTargetText;
@@ -24,8 +26,13 @@ import com.parser.MyHtmlParser;
 import com.pipeline.Filepipeline;
 
 public class TestMain {
+	@SuppressWarnings("unused")
+	private static final String GONGSIURL = "http://www.lagou.com/gongsi/0-0-0";// 全国
 	private static final String ZHAOPINURL = "http://www.lagou.com/zhaopin/";
+	private static final String GONGSIAJAX = "http://www.lagou.com/gongsi/0-0-0.json";
 	private static final String POSITIONURL = "http://www.lagou.com/gongsi/searchPosition.json";
+	private static final String SEARCHURL = "http://www.lagou.com/jobs/companyAjax.json";
+	public static HashMap<String, String> map = new HashMap<>();
 	// private CrawlerLib lib;
 	private static final HttpClient CLIENT = CrawlerLib.getInstanceClient(false);
 	private static final String CHARSET = "UTF-8";
@@ -62,7 +69,6 @@ public class TestMain {
 	}
 
 	public static void func() {
-		HashMap<String, String> map = new HashMap<>();
 		Filepipeline pipe = new Filepipeline();
 		map.put("Referer", "http://www.lagou.com/");
 		map.put("User-Agent",
@@ -89,7 +95,7 @@ public class TestMain {
 			String positionJson = FetchTargetText.postEntity(CLIENT, POSITIONURL, postDict, null, map, CHARSET);
 			pipe.printResult(detailJson, true, "companyInfoData");// 打印公司detail
 			pipe.printResult(positionJson, true, "PositionInfo");// 打印职位detail
-			pipe.printResult(interviewJson, true, "interviewExperiencesData");
+			pipe.printResult(interviewJson, true, "interviewExperiencesData");// 打印面试信息
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
@@ -98,18 +104,92 @@ public class TestMain {
 		}
 	}
 
+	/**
+	 * @param pageNum
+	 *            最多为20页
+	 */
+	public static String getCompanyAjax(int pageNum) {
+		HashMap<String, String> headersMap = new HashMap<>();
+		headersMap.put("Referer", "http://www.lagou.com/gongsi/0-0-0");
+		headersMap.put("User-Agent",
+				"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36");
+		headersMap.put("X-Requested-With", "XMLHttpRequest");
+		headersMap.put("X-Anit-Forge-Token", "None");
+		headersMap.put("X-Anit-Forge-Code", "0");
+		List<NameValuePair> list = new ArrayList<>();
+		list.add(new BasicNameValuePair("first", "false"));
+		list.add(new BasicNameValuePair("pn", pageNum + ""));
+		list.add(new BasicNameValuePair("sortField", "0"));
+		list.add(new BasicNameValuePair("havemark", "0"));
+		String result = FetchTargetText.postEntity(CLIENT, GONGSIAJAX, list, null, headersMap, CHARSET);
+		return result;// 结果在result的array下，详情见抓取指南。可以此获取companyID
+	}
+
+	/*
+	 * 通过companyId得到公司面试评价信息，此项可能没有
+	 */
+	public static String getCompanyInterView(String companyId) {
+		String result = null;
+		String companyUrl = getCompanyUrl(companyId);
+		String companyDetailHtml = FetchTargetText.getEntity(CLIENT, companyUrl, map, CHARSET);
+		Document doc = Jsoup.parse(companyDetailHtml);
+		try {
+			result = doc.select("#interviewExperiencesData").first().html();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+
+	}
+
+	/**
+	 * 用于传入companyid得到公司职位信息而组成post的表单。
+	 */
 	public static List<NameValuePair> getPostDict(String companyId) {
 		List<NameValuePair> postDict = new ArrayList<>();
 		System.out.println("****************" + companyId + "***************");
 		postDict.add(new BasicNameValuePair("companyId", companyId));
 		postDict.add(new BasicNameValuePair("positionFirstType", "全部"));
 		postDict.add(new BasicNameValuePair("pageNo", "1"));
-		postDict.add(new BasicNameValuePair("pageSize", "10"));
+		postDict.add(new BasicNameValuePair("pageSize", "50"));
 		return postDict;
 	}
 
+	/**
+	 * 用于传入companyId，得到公司招聘职位信息
+	 */
+	public static String getCompanyPositionInfo(String companyId) {
+		HashMap<String, String> map = new HashMap<>();
+		map.put("Referer", "http://www.lagou.com/");
+		map.put("User-Agent",
+				"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36");
+		List<NameValuePair> postDict = getPostDict(companyId);
+		String positionJson = FetchTargetText.postEntity(CLIENT, POSITIONURL, postDict, null, map, CHARSET);
+		return positionJson;
+
+	}
+
+	/**
+	 * 通过companyId组装公司详情页
+	 */
 	public static String getCompanyUrl(String companyId) {
 		return "http://www.lagou.com/gongsi/" + companyId + ".html";
+	}
+
+	/**
+	 * 通过传入公司名，获取返回json,默认地址为成都.搜索结果在content.result数组下，具体参见爬取指南
+	 */
+	public static String getSearchCompany(String keyWord) {
+		String defaultUrl = SEARCHURL + "?city=%E6%88%90%E9%83%BD&needAddtionalResult=false";
+		map.put("Referer",
+				"http://www.lagou.com/jobs/list_%E5%BD%93%E4%B9%90?city=%E6%88%90%E9%83%BD&cl=false&fromSearch=true&labelWords=&suginput=");
+		List<NameValuePair> list = new ArrayList<>();
+		list.add(new BasicNameValuePair("first", "true"));
+		list.add(new BasicNameValuePair("pn", "1"));
+		list.add(new BasicNameValuePair("kd", keyWord));
+		String resultJson = FetchTargetText.postEntity(CLIENT, defaultUrl, list, null, map, CHARSET);
+		return resultJson;
+
 	}
 
 	public static void test() {
