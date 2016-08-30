@@ -105,6 +105,8 @@ public class TestMain {
 	}
 
 	/**
+	 * 在拉勾全国分类下返回公司信息ajax
+	 * 
 	 * @param pageNum
 	 *            最多为20页
 	 */
@@ -126,15 +128,16 @@ public class TestMain {
 	}
 
 	/*
-	 * 通过companyId得到公司面试评价信息，此项可能没有
+	 * 通过companyId得到公司面试评价信息，和公司信息，部分公司没有评价 string[0]为评价信息，string[1]为公司信息
 	 */
-	public static String getCompanyInterView(String companyId) {
-		String result = null;
+	public static String[] getCompanyInterView(String companyId) {
+		String[] result = new String[2];
 		String companyUrl = getCompanyUrl(companyId);
 		String companyDetailHtml = FetchTargetText.getEntity(CLIENT, companyUrl, map, CHARSET);
 		Document doc = Jsoup.parse(companyDetailHtml);
 		try {
-			result = doc.select("#interviewExperiencesData").first().html();
+			result[0] = doc.select("#interviewExperiencesData").first().html();
+			result[1] = doc.select("#companyInfoData").first().html();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
