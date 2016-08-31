@@ -46,11 +46,16 @@ public class FetchTargetText {
 			e.printStackTrace();
 		} catch (IOException e) {
 			html = "error";
-			System.out.println("获取" + url + "错误" + "\r\n");
+			System.out.println("鑾峰彇" + url + "閿欒" + "\r\n");
 			e.printStackTrace();
 		} finally {
 			get.abort();
 			System.out.println("*****************");
+		}
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 		return html;
 	}
@@ -92,11 +97,16 @@ public class FetchTargetText {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("获取" + url + "错误");
+			System.out.println("鑾峰彇" + url + "閿欒");
 			result = "error";
 		} finally {
 			post.abort();
 			System.out.println("****************");
+		}
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 		return result;
 	}
