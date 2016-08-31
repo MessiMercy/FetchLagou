@@ -1,5 +1,7 @@
 package com.Main;
 
+import java.io.IOException;
+import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +11,10 @@ import java.util.Stack;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -22,6 +28,8 @@ import com.google.gson.reflect.TypeToken;
 import com.model.CompanyInfo;
 import com.model.InterviewExperience;
 import com.model.PositionInfo;
+import com.model.SimpleInterviewExperiences;
+import com.model.inter.ISimpleInterviewExperiencesOperation;
 import com.parser.MyHtmlParser;
 import com.pipeline.Filepipeline;
 
@@ -36,6 +44,20 @@ public class TestMain {
 	// private CrawlerLib lib;
 	private static final HttpClient CLIENT = CrawlerLib.getInstanceClient(false);
 	private static final String CHARSET = "UTF-8";
+	private static SqlSessionFactory factory;
+	private static Reader reader;
+	static {
+		try {
+			reader = Resources.getResourceAsReader("Configuration.xml");
+			factory = new SqlSessionFactoryBuilder().build(reader);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static SqlSessionFactory getFactory() {
+		return factory;
+	}
 
 	public static void main(String[] args) {
 		// try {
@@ -65,7 +87,8 @@ public class TestMain {
 		// } catch (IOException e) {
 		// e.printStackTrace();
 		// }
-		func();
+		// func();
+		sqlTest();
 	}
 
 	public static void func() {
@@ -239,5 +262,21 @@ public class TestMain {
 		info2.setInterviewExperiences(interviewExperiences);
 		String myJson = new Gson().toJson(info2, CompanyInfo.class);
 		CrawlerLib.printResult(myJson, true);
+	}
+
+	public static void sqlTest() {
+		SqlSession session = factory.openSession();
+		ISimpleInterviewExperiencesOperation operation = session.getMapper(ISimpleInterviewExperiencesOperation.class);
+		SimpleInterviewExperiences interview = new SimpleInterviewExperiences();
+		interview.setCompanyId(8080);
+		interview.setCompanyScore(5);
+		interview.setContent("adasc测试测试");
+		interview.setUsername("呵呵");
+		operation.addInterview(interview);
+		session.commit();
+		SimpleInterviewExperiences in = operation.selectInterviewByID(8080);
+		System.out.println(in.getCompanyId());
+		System.out.println(in.getContent());
+		session.close();
 	}
 }
