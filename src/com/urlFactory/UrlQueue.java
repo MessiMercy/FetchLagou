@@ -5,14 +5,14 @@ import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 public class UrlQueue {
-	private LinkedBlockingQueue<String> queue;
-	private PriorityBlockingQueue<String> priorityQueue;
+	private LinkedBlockingQueue<Integer> queue;
+	private PriorityBlockingQueue<Integer> priorityQueue;
 
 	public void test() {
 
 	}
 
-	public void put(String url, boolean isFailedUrl) {
+	public void put(int url, boolean isFailedUrl) {
 		if (isFailedUrl) {
 			priorityQueue.put(url);
 		} else {
@@ -24,8 +24,8 @@ public class UrlQueue {
 		}
 	}
 
-	public String take() {
-		String result = null;
+	public Integer take() {
+		Integer result = null;
 		if (priorityQueue.size() == 0) {
 			try {
 				result = queue.poll(60, TimeUnit.SECONDS);
@@ -42,19 +42,19 @@ public class UrlQueue {
 		return result;
 	}
 
-	public LinkedBlockingQueue<String> getQueue() {
+	public LinkedBlockingQueue<Integer> getQueue() {
 		return queue;
 	}
 
-	public void setQueue(LinkedBlockingQueue<String> queue) {
+	public void setQueue(LinkedBlockingQueue<Integer> queue) {
 		this.queue = queue;
 	}
 
-	public PriorityBlockingQueue<String> getPriorityQueue() {
+	public PriorityBlockingQueue<Integer> getPriorityQueue() {
 		return priorityQueue;
 	}
 
-	public void setPriorityQueue(PriorityBlockingQueue<String> priorityQueue) {
+	public void setPriorityQueue(PriorityBlockingQueue<Integer> priorityQueue) {
 		this.priorityQueue = priorityQueue;
 	}
 
