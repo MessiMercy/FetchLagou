@@ -53,7 +53,7 @@ public class FetchTargetText {
 			System.out.println("*****************");
 		}
 		try {
-			Thread.sleep(6000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -104,7 +104,7 @@ public class FetchTargetText {
 			System.out.println("****************");
 		}
 		try {
-			Thread.sleep(6000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

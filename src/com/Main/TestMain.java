@@ -1,5 +1,9 @@
 package com.Main;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
@@ -22,6 +26,7 @@ import org.jsoup.nodes.Document;
 
 import com.downloader.CrawlerLib;
 import com.downloader.FetchTargetText;
+import com.duplicate.DuplicateRemover;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
@@ -47,7 +52,7 @@ public class TestMain {
 	@SuppressWarnings("unused")
 	private static final String GONGSIURL = "http://www.lagou.com/gongsi/0-0-0";// 全国
 	private static final String ZHAOPINURL = "http://www.lagou.com/zhaopin/";
-	private static final String GONGSIAJAX = "http://www.lagou.com/gongsi/0-0-0.json";
+	private static final String GONGSIAJAX = "http://www.lagou.com/gongsi/215-0-0.json";
 	private static final String POSITIONURL = "http://www.lagou.com/gongsi/searchPosition.json";
 	private static final String SEARCHURL = "http://www.lagou.com/jobs/companyAjax.json";
 	public static HashMap<String, String> map = new HashMap<>();
@@ -58,6 +63,7 @@ public class TestMain {
 	private static final UrlQueue queue = new UrlQueue();
 	private static SqlSessionFactory factory;
 	private static Reader reader;
+	private static DuplicateRemover remover = new DuplicateRemover();
 
 	static {
 		try {
@@ -73,7 +79,86 @@ public class TestMain {
 	}
 
 	public static void main(String[] args) {
-		storeAllDetails(125138);
+		search();
+	}
+
+	public static void readIDandStore() {
+		Stack<Integer> myStack = new Stack<>();
+		try {
+			FileReader reader = new FileReader("companyIds.txt");
+			BufferedReader bfr = new BufferedReader(reader);
+			String temp = null;
+			while ((temp = bfr.readLine()) != null) {
+				myStack.add(Integer.valueOf(temp));
+			}
+			System.out.println("已读取id数： " + myStack.size());
+			bfr.close();
+			reader.close();
+			while (!myStack.isEmpty()) {
+				int companyId = myStack.pop();
+				try {
+					storeAllDetails(companyId);
+				} catch (Exception e) {
+					e.printStackTrace();
+					continue;
+				}
+				System.out.println("目前进度： " + myStack.size());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			try {
+				FileWriter fileWriter = new FileWriter(new File("leftIds.txt"), true);
+				while (!myStack.isEmpty()) {
+					fileWriter.write(myStack.pop() + "\r\n");
+				}
+				fileWriter.close();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		}
+		// storeAllDetails(125138);
+		// Filepipeline pipe = new Filepipeline();
+		// pipe.printResult(companyAjax, true, "companyAjax.txt");
+
+		// for (Integer integer : arr) {
+		// System.out.println(integer);
+		// }
+	}
+
+	public static void collectId() {
+		List<Integer> allId = new ArrayList<>();
+		for (int i = 1; i <= 20; i++) {
+			String companyAjax = getCompanyAjax(i);
+			List<Integer> ids = getCompanyIdList(companyAjax);
+			System.out.println("找到id数: " + ids.size());
+			allId.addAll(ids);
+		}
+		try {
+			System.out.println("总计找到id数： " + allId.size());
+			FileWriter writer = new FileWriter(new File("companyIds.txt"), true);
+			for (Integer integer : allId) {
+				writer.write(integer + "\r\n");
+			}
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static List<Integer> getCompanyIdList(String companyAjax) {
+		System.out.println(companyAjax.length());
+		List<Integer> arr = new ArrayList<>();
+		JsonParser parser = new JsonParser();
+		JsonObject obj = parser.parse(companyAjax).getAsJsonObject();
+		JsonArray array = obj.get("result").getAsJsonArray();
+		System.out.println("jsonarray的size为： " + array.size());
+		for (JsonElement jsonElement : array) {
+			int id = jsonElement.getAsJsonObject().get("companyId").getAsInt();
+			if (!remover.isDuplicate(id)) {
+				arr.add(id);
+			}
+		}
+		return arr;
 	}
 
 	public static void search() {
@@ -84,14 +169,34 @@ public class TestMain {
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(resultAjax);
 		JsonElement contentElement = element.getAsJsonObject().get("content");
-		System.out.println("总共查询到" + contentElement.getAsJsonObject().get("totalCount").getAsInt() + "个结果");
-		JsonArray array = contentElement.getAsJsonObject().get("result").getAsJsonArray();
-		for (JsonElement jsonElement : array) {
-			int companyID = jsonElement.getAsJsonObject().get("companyId").getAsInt();
-			queue.put(companyID, false);
+		int resultNums = contentElement.getAsJsonObject().get("totalCount").getAsInt();
+		System.out.println("总共查询到" + resultNums + "个结果");
+		if (resultNums == 0) {
+			search();
 		}
-		Filepipeline pipe = new Filepipeline();
-		pipe.printResult(resultAjax, false, "resultAjax.txt");
+		JsonArray array = contentElement.getAsJsonObject().get("result").getAsJsonArray();
+		String temp = null;
+		System.out.println("输入数字查看其中结果");
+		while (!(temp = scanner.nextLine()).equals("exit")) {
+			JsonElement jsonElement = array.get(Integer.valueOf(temp));
+			int companyID = jsonElement.getAsJsonObject().get("companyId").getAsInt();
+			String[] companyAndInterView = getCompanyAndInterView(companyID);
+			String interViewInfo = companyAndInterView[0];
+			String companyInfo = companyAndInterView[1];
+			String positionAjax = getCompanyPositionInfo(companyID);
+			SimpleCompanyInfo info = getCompanyInfo(companyInfo);
+			List<SimpleInterviewExperiences> list = getInterview(interViewInfo);
+			List<SimplePositionInfo> po = getPositionInfo(positionAjax);
+			System.out.println(info.toString());
+			for (SimplePositionInfo simplePositionInfo : po) {
+				System.out.println(simplePositionInfo.toString());
+			}
+			for (SimpleInterviewExperiences interview : list) {
+				System.out.println(interview.toString());
+			}
+		}
+		// Filepipeline pipe = new Filepipeline();
+		// pipe.printResult(resultAjax, false, "resultAjax.txt");
 		scanner.close();
 	}
 
@@ -387,5 +492,13 @@ public class TestMain {
 		System.out.println(in.getCompanyId());
 		System.out.println(in.getContent());
 		session.close();
+	}
+
+	public static DuplicateRemover getRemover() {
+		return remover;
+	}
+
+	public static void setRemover(DuplicateRemover remover) {
+		TestMain.remover = remover;
 	}
 }

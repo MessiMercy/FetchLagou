@@ -17,6 +17,29 @@ public class SimplePositionInfo {
 	private String positionAdvantage;
 	private String district;
 
+	public String toString() {
+		StringBuffer result = new StringBuffer();
+		result.append("职位信息：\r\n-------------------------------------------------\r\n");
+		result.append("公司id： " + companyId + "\r\n");
+		result.append("职位id： " + positionId + "\r\n");
+		result.append("全职兼职： " + jobNature + "\r\n");
+		result.append("融资情况： " + financeStage + "\r\n");
+		result.append("公司名字： " + companyName + "\r\n");
+		result.append("所在城市： " + city + "\r\n");
+		result.append("公司全称： " + companyFullName + "\r\n");
+		result.append("公司业务： " + industryField + "\r\n");
+		result.append("职位名称： " + positionName + "\r\n");
+		result.append("融资情况： " + financeStage + "\r\n");
+		result.append("创建时间： " + createTime + "\r\n");
+		result.append("工资： " + salary + "\r\n");
+		result.append("工作经验： " + workYear + "\r\n");
+		result.append("教育情况： " + education + "\r\n");
+		result.append("职位优势： " + positionAdvantage + "\r\n");
+		result.append("区域： " + district + "\r\n");
+		result.append("-----------------------------------------\r\n");
+		return result.toString();
+	}
+
 	public int getCompanyId() {
 		return companyId;
 	}

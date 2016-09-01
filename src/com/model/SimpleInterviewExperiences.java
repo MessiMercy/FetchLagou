@@ -13,6 +13,24 @@ public class SimpleInterviewExperiences {
 	private int interviewerScore;// 面试星级
 	private int companyScore;// 公司星级
 
+	public String toString() {
+		StringBuffer result = new StringBuffer();
+		result.append("面试信息：\r\n-------------------------------------------------\r\n");
+		result.append("公司id： " + companyId + "\r\n");
+		result.append("面试id： " + id + "\r\n");
+		result.append("面试标签： " + tagArray + "\r\n");
+		result.append("用户名： " + username + "\r\n");
+		result.append("内容： " + content + "\r\n");
+		result.append("职位名称： " + positionName + "\r\n");
+		result.append("职位类型： " + positionType + "\r\n");
+		result.append("创建时间： " + createTime + "\r\n");
+		result.append("描述相符星级： " + describeScore + "\r\n");
+		result.append("面试星级： " + interviewerScore + "\r\n");
+		result.append("公司星级： " + companyScore + "\r\n");
+		result.append("-----------------------------------------\r\n");
+		return result.toString();
+	}
+
 	public int getCompanyId() {
 		return companyId;
 	}
