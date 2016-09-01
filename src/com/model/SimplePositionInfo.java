@@ -15,7 +15,6 @@ public class SimplePositionInfo {
 	private String workYear;
 	private String education;
 	private String positionAdvantage;
-	private String companyLabelList;
 	private String district;
 
 	public int getCompanyId() {
@@ -128,14 +127,6 @@ public class SimplePositionInfo {
 
 	public void setPositionAdvantage(String positionAdvantage) {
 		this.positionAdvantage = positionAdvantage;
-	}
-
-	public String getCompanyLabelList() {
-		return companyLabelList;
-	}
-
-	public void setCompanyLabelList(String companyLabelList) {
-		this.companyLabelList = companyLabelList;
 	}
 
 	public String getDistrict() {

@@ -15,7 +15,7 @@
     	<result column="userAddress" property="userAddress"/>
     </resultMap> -->
     <insert id="addCompany" parameterType="SimpleCompanyInfo" useGeneratedKeys="false" keyProperty="companyId">
-    insert into SimpleCompanyInfo (companyId,detailAddress,labels,companySize,companyProfile,lastLoginTime,industryField,positionCount,city,resumeProcessRate,resumeProcessTime,experienceCount,financeStage) values(#{companyId},#{detailAddress},#{labels},#{companySize},#{companyProfile},#{lastLoginTime},#{industryField},#{positionCount},#{city},#{resumeProcessRate},#{resumeProcessTime},#{experienceCount},#{financeStage})
+    insert into SimpleCompanyInfo (companyId,detailAddress,companySize,companyProfile,lastLoginTime,industryField,positionCount,city,resumeProcessRate,resumeProcessTime,experienceCount,financeStage) values(#{companyId},#{detailAddress},#{companySize},#{companyProfile},#{lastLoginTime},#{industryField},#{positionCount},#{city},#{resumeProcessRate},#{resumeProcessTime},#{experienceCount},#{financeStage})
       </insert>
     <!-- <update id="updatePosition" parameterType="SimpleCompanyInfo">
     	update SimpleCompanyInfo set userName=#{userName},userAge=#{userAge},userAddress=#{userAddress} where id=#{id}

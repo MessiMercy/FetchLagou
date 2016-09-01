@@ -15,7 +15,7 @@
     	<result column="userAddress" property="userAddress"/>
     </resultMap> -->
     <insert id="addInterview" parameterType="SimpleInterviewExperiences" useGeneratedKeys="false" keyProperty="companyId">
-    	insert into SimpleInterviewExperiences (companyId,tagArray,username,content,positionName,positionType,createTime) values(#{companyId},#{tagArray},#{username},#{content},#{positionName},#{positionType},#{createTime})
+    	insert into SimpleInterviewExperiences (id,companyId,tagArray,username,content,positionName,positionType,createTime,describeScore,interviewerScore,companyScore) values(#{id},#{companyId},#{tagArray},#{username},#{content},#{positionName},#{positionType},#{createTime},#{describeScore},#{interviewerScore},#{companyScore})
     </insert>
     <!-- <update id="updatePosition" parameterType="SimpleInterviewExperiences">
     	update SimpleInterviewExperiences set userName=#{userName},userAge=#{userAge},userAddress=#{userAddress} where id=#{id}

@@ -15,7 +15,7 @@
     	<result column="userAddress" property="userAddress"/>
     </resultMap> -->
     <insert id="addPosition" parameterType="SimplePositionInfo" useGeneratedKeys="false" keyProperty="companyId">
-    	insert into SimplePositionInfo (companyId,positionId,jobNature,financeStage,companyName,companyFullName,industryField,positionName,city,createTime,salary,workYear,education,positionAdvantage,companyLabelList,district) values(#{companyId},#{positionId},#{jobNature},#{financeStage},#{companyName},#{companyFullName},#{industryField},#{positionName},#{city},#{createTime},#{salary},#{workYear},#{education},#{positionAdvantage},#{companyLabelList},#{district})
+    	insert into SimplePositionInfo (companyId,positionId,jobNature,financeStage,companyName,companyFullName,industryField,positionName,city,createTime,salary,workYear,education,positionAdvantage,district) values(#{companyId},#{positionId},#{jobNature},#{financeStage},#{companyName},#{companyFullName},#{industryField},#{positionName},#{city},#{createTime},#{salary},#{workYear},#{education},#{positionAdvantage},#{district})
     </insert>
     <!-- <update id="updatePosition" parameterType="SimplePositionInfo">
     	update SimplePositionInfo set userName=#{userName},userAge=#{userAge},userAddress=#{userAddress} where id=#{id}

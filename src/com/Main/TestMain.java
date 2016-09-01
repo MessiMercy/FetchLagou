@@ -2,6 +2,7 @@ package com.Main;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.io.StringReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,13 +26,19 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
+import com.google.gson.stream.JsonReader;
 import com.model.CompanyInfo;
 import com.model.InterviewExperience;
 import com.model.PositionInfo;
+import com.model.SimpleCompanyInfo;
 import com.model.SimpleInterviewExperiences;
+import com.model.SimplePositionInfo;
+import com.model.inter.ISimpleCompanyInfoOperation;
 import com.model.inter.ISimpleInterviewExperiencesOperation;
+import com.model.inter.ISimplePositionInfoOperation;
 import com.parser.MyHtmlParser;
 import com.pipeline.Filepipeline;
 import com.urlFactory.UrlQueue;
@@ -66,7 +73,7 @@ public class TestMain {
 	}
 
 	public static void main(String[] args) {
-
+		storeAllDetails(125138);
 	}
 
 	public static void search() {
@@ -172,19 +179,19 @@ public class TestMain {
 		postDict.add(new BasicNameValuePair("companyId", companyId));
 		postDict.add(new BasicNameValuePair("positionFirstType", "全部"));
 		postDict.add(new BasicNameValuePair("pageNo", "1"));
-		postDict.add(new BasicNameValuePair("pageSize", "50"));
+		postDict.add(new BasicNameValuePair("pageSize", "10"));
 		return postDict;
 	}
 
 	/**
 	 * 用于传入companyId，得到公司招聘职位信息
 	 */
-	public static String getCompanyPositionInfo(String companyId) {
+	public static String getCompanyPositionInfo(int companyId) {
 		HashMap<String, String> map = new HashMap<>();
 		map.put("Referer", "http://www.lagou.com/");
 		map.put("User-Agent",
 				"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36");
-		List<NameValuePair> postDict = getPostDict(companyId);
+		List<NameValuePair> postDict = getPostDict(companyId + "");
 		String positionJson = FetchTargetText.postEntity(CLIENT, POSITIONURL, postDict, null, map, CHARSET);
 		return positionJson;
 
@@ -259,24 +266,111 @@ public class TestMain {
 	}
 
 	public static void storeAllDetails(int companyId) {
+		SqlSession session = factory.openSession();
+		ISimplePositionInfoOperation positionInfoOperation = session.getMapper(ISimplePositionInfoOperation.class);
+		ISimpleInterviewExperiencesOperation interviewExperiencesOperation = session
+				.getMapper(ISimpleInterviewExperiencesOperation.class);
+		ISimpleCompanyInfoOperation companyInfoOperation = session.getMapper(ISimpleCompanyInfoOperation.class);
 		String[] companyAndInterView = getCompanyAndInterView(companyId);
 		String interViewInfo = companyAndInterView[0];
 		String companyInfo = companyAndInterView[1];
+		String positionAjax = getCompanyPositionInfo(companyId);
+		SimpleCompanyInfo info = getCompanyInfo(companyInfo);
 		List<SimpleInterviewExperiences> list = getInterview(interViewInfo);
+		List<SimplePositionInfo> po = getPositionInfo(positionAjax);
+		System.out.println("正在存储职位信息，条数为：" + po.size());
+		for (SimplePositionInfo simplePositionInfo : po) {
+			positionInfoOperation.addPosition(simplePositionInfo);
+		}
+		System.out.println("正在存储面试简介信息，条数为：" + list.size());
+		for (SimpleInterviewExperiences interview : list) {
+			interviewExperiencesOperation.addInterview(interview);
+		}
+		System.out.println("正在存储公司信息");
+		companyInfoOperation.addCompany(info);
+		session.commit();
+		session.close();
+	}
 
+	public static SimpleCompanyInfo getCompanyInfo(String companyJson) {
+		SimpleCompanyInfo info = new SimpleCompanyInfo();
+		JsonParser parser = new JsonParser();
+		JsonObject oo = parser.parse(companyJson).getAsJsonObject();
+		System.out.println("公司信息是否为null： " + oo == null);
+		try {
+			int companyId = oo.get("companyId").getAsInt();
+			int positionCount = oo.get("dataInfo").getAsJsonObject().get("positionCount").getAsInt();
+			int resumeProcessRate = oo.get("dataInfo").getAsJsonObject().get("resumeProcessRate").getAsInt();
+			int resumeProcessTime = oo.get("dataInfo").getAsJsonObject().get("resumeProcessTime").getAsInt();
+			int experienceCount = oo.get("dataInfo").getAsJsonObject().get("experienceCount").getAsInt();
+			String city = oo.get("baseInfo").getAsJsonObject().get("city").getAsString();
+			String detailAddress = oo.get("addressList").getAsJsonArray().get(0).getAsJsonObject().get("detailAddress")
+					.getAsString();
+			String industryField = oo.get("baseInfo").getAsJsonObject().get("industryField").getAsString();
+			String companySize = oo.get("baseInfo").getAsJsonObject().get("companySize").getAsString();
+			String financeStage = oo.get("baseInfo").getAsJsonObject().get("financeStage").getAsString();
+			String companyProfile = oo.get("introduction").getAsJsonObject().get("companyProfile").getAsString();
+			String lastLoginTime = oo.get("dataInfo").getAsJsonObject().get("lastLoginTime").getAsString();
+			info.setCompanyId(companyId);
+			info.setPositionCount(positionCount);
+			info.setResumeProcessRate(resumeProcessRate);
+			info.setResumeProcessTime(resumeProcessTime);
+			info.setExperienceCount(experienceCount);
+			info.setCity(city);
+			info.setDetailAddress(detailAddress);
+			info.setIndustryField(industryField);
+			info.setCompanySize(companySize);
+			info.setFinanceStage(financeStage);
+			info.setCompanyProfile(companyProfile);
+			info.setLastLoginTime(lastLoginTime);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return info;
 	}
 
 	public static List<SimpleInterviewExperiences> getInterview(String interviewJson) {
 		List<SimpleInterviewExperiences> list = new ArrayList<>();
 		JsonParser parser = new JsonParser();
-		JsonElement element = parser.parse(interviewJson);
+		JsonReader reader = new JsonReader(new StringReader(interviewJson));
+		reader.setLenient(true);
+		JsonElement element = parser.parse(reader);
 		JsonArray array = element.getAsJsonObject().get("result").getAsJsonArray();
-		Gson gson = new Gson();
+		// Gson gson = new Gson();
 		for (JsonElement jsonElement : array) {
-			SimpleInterviewExperiences experience = gson.fromJson(jsonElement, SimpleInterviewExperiences.class);
+			SimpleInterviewExperiences experience = new SimpleInterviewExperiences();
+			try {
+				experience.setId(jsonElement.getAsJsonObject().get("id").getAsInt());
+				experience.setCompanyId(jsonElement.getAsJsonObject().get("companyId").getAsInt());
+				experience.setCompanyScore(jsonElement.getAsJsonObject().get("companyScore").getAsInt());
+				experience.setContent(jsonElement.getAsJsonObject().get("content").getAsString());
+				experience.setCreateTime(jsonElement.getAsJsonObject().get("createTime").getAsString());
+				experience.setDescribeScore(jsonElement.getAsJsonObject().get("describeScore").getAsInt());
+				experience.setPositionName(jsonElement.getAsJsonObject().get("positionName").getAsString());
+				experience.setPositionType(jsonElement.getAsJsonObject().get("positionType").getAsString());
+				experience.setInterviewerScore(jsonElement.getAsJsonObject().get("interviewerScore").getAsInt());
+				experience.setUsername(jsonElement.getAsJsonObject().get("username").getAsString());
+				experience.setTagArray(jsonElement.getAsJsonObject().get("tagArray").getAsJsonArray().toString());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			list.add(experience);
 		}
 		return list;
+	}
+
+	public static List<SimplePositionInfo> getPositionInfo(String positionJson) {
+		List<SimplePositionInfo> infos = new ArrayList<>();
+		JsonParser parser = new JsonParser();
+		JsonObject element = parser.parse(positionJson).getAsJsonObject();
+		JsonArray array = element.get("content").getAsJsonObject().get("data").getAsJsonObject().get("page")
+				.getAsJsonObject().get("result").getAsJsonArray();
+		Gson gson = new Gson();
+		for (JsonElement jsonElement : array) {
+			SimplePositionInfo info = gson.fromJson(jsonElement, SimplePositionInfo.class);
+			infos.add(info);
+		}
+		return infos;
 	}
 
 	public static void sqlTest() {

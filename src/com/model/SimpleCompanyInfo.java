@@ -8,7 +8,6 @@ public class SimpleCompanyInfo {
 	private int experienceCount;// 面试评价
 	private String city;
 	private String detailAddress;
-	private String labels;// 福利
 	private String industryField;// 公司业务
 	private String companySize;
 	private String financeStage;// 融资情况
@@ -37,14 +36,6 @@ public class SimpleCompanyInfo {
 
 	public void setDetailAddress(String detailAddress) {
 		this.detailAddress = detailAddress;
-	}
-
-	public String getLabels() {
-		return labels;
-	}
-
-	public void setLabels(String labels) {
-		this.labels = labels;
 	}
 
 	public String getIndustryField() {

@@ -2,12 +2,16 @@ package com.model;
 
 public class SimpleInterviewExperiences {
 	private int companyId;
+	private int id;
 	private String tagArray;
 	private String username;
 	private String content;
 	private String positionName;
 	private String positionType;
 	private String createTime;
+	private int describeScore;// 描述相符星级
+	private int interviewerScore;// 面试星级
+	private int companyScore;// 公司星级
 
 	public int getCompanyId() {
 		return companyId;
@@ -89,8 +93,12 @@ public class SimpleInterviewExperiences {
 		this.companyScore = companyScore;
 	}
 
-	private int describeScore;// 描述相符星级
-	private int interviewerScore;// 面试星级
-	private int companyScore;// 公司星级
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 }
