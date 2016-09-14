@@ -79,7 +79,31 @@ public class TestMain {
 	}
 
 	public static void main(String[] args) {
-		search();
+		// search();
+		// map.put("Referer",
+		// "http://www.yingjiesheng.com/commend-fulltime-5.html");
+		// map.put("User-Agent",
+		// "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
+		// Gecko) Chrome/52.0.2743.116 Safari/537.36");
+		// FetchTargetText.getEntity(CLIENT,
+		// "http://www.yingjiesheng.com/commend-fulltime-5.html", map, "gbk");
+		// String html = FetchTargetText.getEntity(CLIENT,
+		// "http://www.yingjiesheng.com/commend-fulltime-4.html", map,
+		// "gbk");
+		// new Filepipeline().printResult(html, false, "test.txt");
+		SqlSession session = factory.openSession();
+		ISimpleInterviewExperiencesOperation interviewOp = session
+				.getMapper(ISimpleInterviewExperiencesOperation.class);
+		// List<SimpleInterviewExperiences> in =
+		// interviewOp.selectInterviewByID(28370);
+		// for (SimpleInterviewExperiences simpleInterviewExperiences : in) {
+		// System.out.println(simpleInterviewExperiences.toString());
+		// }
+		List<SimpleInterviewExperiences> list = interviewOp.selectCompanyInterviews(179);
+		System.out.println(list.get(0).getSimpleCompanyInfo().toString());
+		for (SimpleInterviewExperiences simpleInterviewExperiences : list) {
+			System.out.println(simpleInterviewExperiences.toString());
+		}
 	}
 
 	public static void readIDandStore() {
@@ -488,9 +512,10 @@ public class TestMain {
 		interview.setUsername("呵呵");
 		operation.addInterview(interview);
 		session.commit();
-		SimpleInterviewExperiences in = operation.selectInterviewByID(8080);
-		System.out.println(in.getCompanyId());
-		System.out.println(in.getContent());
+		List<SimpleInterviewExperiences> in = operation.selectInterviewByID(8080);
+		for (SimpleInterviewExperiences simpleInterviewExperiences : in) {
+			System.out.println(simpleInterviewExperiences.toString());
+		}
 		session.close();
 	}
 

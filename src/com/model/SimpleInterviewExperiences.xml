@@ -23,4 +23,35 @@
     <delete id="deleteSimpleInterviewExperiences" parameterType="int">
     	delete from SimpleInterviewExperiences where companyId=#{companyId}
     </delete>
+    <resultMap id="resultCompanyInterviewsList" type="SimpleInterviewExperiences">
+    	<id property="id" column="id"/>
+    	<result property="companyId" column="companyId" />
+    	<result property="tagArray" column="tagArray" />
+    	<result property="username" column="username" />
+    	<result property="content" column="content" />
+    	<result property="positionName" column="positionName" />
+    	<result property="positionType" column="positionType" />
+    	<result property="createTime" column="createTime" />
+    	<result property="describeScore" column="describeScore" />
+    	<result property="interviewerScore" column="interviewerScore" />
+    	<result property="companyScore" column="companyScore" />
+    	
+    	<association property="simpleCompanyInfo" javaType="SimpleCompanyInfo">
+    		<id property="companyId" column="companyId"/>
+	    	<result property="positionCount" column="positionCount" />
+	    	<result property="resumeProcessRate" column="resumeProcessRate" />
+	    	<result property="resumeProcessTime" column="resumeProcessTime" />
+	    	<result property="experienceCount" column="experienceCount" />
+	    	<result property="city" column="city" />
+	    	<result property="detailAddress" column="detailAddress" />
+	    	<result property="industryField" column="industryField" />
+	    	<result property="companySize" column="companySize" />
+	    	<result property="financeStage" column="financeStage" />
+	    	<result property="companyProfile" column="companyProfile" />
+	    	<result property="lastLoginTime" column="lastLoginTime" />
+    	</association>
+    </resultMap>
+    <select id="selectCompanyInterviews" parameterType="int" resultMap="resultCompanyInterviewsList">
+		SELECT * FROM simpleCompanyInfo,simpleInterviewExperiences WHERE simpleInterviewExperiences.companyId=simpleCompanyInfo.companyId AND simplecompanyinfo.companyId=#{companyId}
+    </select> 
 </mapper>

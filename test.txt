@@ -1,0 +1,1142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>校园招聘_第4页_应届生求职网</title>
+<meta name="keywords" content="校园照聘,最新推荐,应届生求职网"/>
+<meta name="description" content="应届生求职网最新校园招聘推荐专区为您提供最新校园招聘信息。本栏目所有最新校园招聘信息均由应届生精心选择推荐，包括各大知名公司校园招聘，公务员事业单位校园招聘等相关信息。最新校园招聘推荐专区是应届生求职网最受欢迎的栏目之一。本栏目仅包含由应届生推荐的校园招聘信息，不包括本站所有校园招聘信息，如果您需要要查看更多校园招聘信息，请选择相关地区频道，查看更多校园招聘信息。祝您求职顺利！ " />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<link rel="Shortcut Icon" href="/favicon.ico">
+<link rel="stylesheet" href="http://static1.yingjiesheng.net/html/style/header_v1.5.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://static1.yingjiesheng.net/html/style/job_v1.1.css" type="text/css" media="all" />
+<script src="http://static1.yingjiesheng.net/html/scripts/global.js" type="text/javascript"></script>
+<script src="http://static1.yingjiesheng.net/html/scripts/search.js" type="text/javascript"></script>
+</head>
+<body >
+<div id="wrap">
+	<div id="header">
+		<div class="logo">
+			<a href="/"><img src="http://static1.yingjiesheng.net/html/images/logo.gif" width="180" height="80" title="应届生求职网" /></a>
+		</div>
+		<div class="menu">
+			<ul class="pubMenu">
+				<li>
+					<a href="/beijing/" class="city" target="_blank">北京</a>
+					<a href="/beijing/" target="_blank">全职</a>
+					<a href="/beijing/ptjob.html" target="_blank">兼职实习</a>
+				</li>
+				<li>
+					<a href="/shanghai/" class="city" target="_blank">上海</a>
+					<a href="/shanghai/" target="_blank">全职</a>
+					<a href="/shanghai/ptjob.html" target="_blank">兼职实习</a>
+				</li>
+				<li>
+					<a href="/guangzhou/" class="city" target="_blank">广州</a>
+					<a href="/guangzhou/" target="_blank">全职</a>
+					<a href="/guangzhou/ptjob.html" target="_blank">兼职实习</a>
+				</li>
+			</ul>
+			<ul class="sideMenu">
+				<li>
+					<a href="/tianjin/" target="_blank">天津</a>
+					<a href="/jinanjob/" target="_blank">济南</a>
+					<a href="/dalianjob/" target="_blank">大连</a>
+					<a href="/qingdaojob/" target="_blank">青岛</a>　
+					<a href="/shandongjob/" target="_blank">山东</a>
+					<a href="/liaoningjob/" target="_blank">辽宁</a>
+					<a href="/hebeijob/" target="_blank">河北</a>
+					<a href="/jilinjob/" target="_blank">吉林</a>
+					<a href="/shanxijob/" target="_blank">陕西</a>
+					<a href="/shanxi2job/" target="_blank">山西</a>
+					<a href="/heilongjiangjob/" target="_blank">黑龙江</a>
+					<a href="/xinjiangxizangjob/" target="_blank">新疆</a>
+					<a href="/xinjiangxizangjob/" target="_blank">西藏</a>
+				</li>
+				<li>
+					<a href="/nanjing/" target="_blank">南京</a>
+					<a href="/wuhan/" target="_blank">武汉</a>
+					<a href="/hangzhoujob/" target="_blank">杭州</a>
+					<a href="/fuzhoujob/" target="_blank">福州</a>　
+					<a href="/jiangsujob/" target="_blank">江苏</a>
+					<a href="/hubeijob/" target="_blank">湖北</a>
+					<a href="/zhejiangjob/" target="_blank">浙江</a>
+					<a href="/fujianjob/" target="_blank">福建</a>
+					<a href="/henanjob/" target="_blank">河南</a>
+					<a href="/hunanjob/" target="_blank">湖南</a>
+					<a href="/neimenggujob/" target="_blank">内蒙古</a>
+					<a href="/anhuijob/" target="_blank">安徽</a>
+					<a href="/jiangxijob/" target="_blank">江西</a>
+				</li>
+				<li>
+					<a href="/shenzhen/" target="_blank">深圳</a>
+					<a href="/chengdu/" target="_blank">成都</a>
+					<a href="/chongqingjob/" target="_blank">重庆</a>
+					<a href="/xianjob/" target="_blank">西安</a>　
+					<a href="/guangdongjob/" target="_blank">广东</a>
+					<a href="/sichuanjob/" target="_blank">四川</a>
+					<a href="/yunnanjob/" target="_blank">云南</a>
+					<a href="/guizhoujob/" target="_blank">贵州</a>
+					<a href="/guangxijob/" target="_blank">广西</a>
+					<a href="/hainanjob/" target="_blank">海南</a>
+					<a href="/gansuningxiaqinghaijob/" target="_blank">甘肃</a>
+					<a href="/gansuningxiaqinghaijob/" target="_blank">宁夏</a>
+					<a href="/gansuningxiaqinghaijob/" target="_blank">青海</a>
+					<a href="/other/" target="_blank">其他</a>
+				</li>
+			</ul>
+		</div>
+		<div class="login">
+			<div class="personal">
+				<a href="http://k.yingjiesheng.com/center/" target="_blank">登录</a>
+				<a href="http://my.yingjiesheng.com/index.php/personal/register.htm" target="_blank">注册</a>
+			</div>
+			<div class="company">
+				<a href="http://my.yingjiesheng.com/index.php/company.htm" target="_blank">登录</a>
+				<a href="http://my.yingjiesheng.com/index.php/company/register.htm" target="_blank">注册</a><br />
+				<a href="/about/solution/index.html" target="_blank">企业服务方案</a>
+			</div>
+			<a href="http://k.yingjiesheng.com/center/" class="per" target="_blank">个人：</a>
+			<a href="http://my.yingjiesheng.com/index.php/company.htm" class="com" target="_blank">企业：</a>
+		</div>
+	</div>
+
+	<div id="mainMenu" class="s_clear">
+		<div class="linkMore">
+			<a href="http://k.yingjiesheng.com/center/" target="_blank">更多</a>
+		</div>
+		<ul id="mainMenu">
+			<li><a href="/" target="_blank" class="menuOn"><strong>首页</strong></a></li>
+			<li><a href="http://bbs.yingjiesheng.com/" target="_blank" class="linkEmphasis"><strong>BBS</strong></a></li>
+			<li><a href="/commend-fulltime-1.html" target="_blank"><strong>全职推荐</strong></a></li>
+			<li><a href="/commend-parttime-1.html" target="_blank"><strong>实习推荐</strong></a></li>
+			<li><a href="http://www.yingjiesheng.com/click.php?ID=1121&RedirectUrl=http%3A%2F%2Fs.yingjiesheng.com%2F" target="_blank"><strong>职位搜索</strong></a></li>
+			<li><a href="http://my.yingjiesheng.com/xuanjianghui.html" target="_blank"><strong>宣讲会</strong></a></li>
+			<li><a href="http://zph.yingjiesheng.com/" target="_blank"><strong>招聘会</strong></a></li>
+			<li><a href="/industry/" target="_blank"><strong>行业招聘</strong></a></li>
+			<li><a href="http://s.yingjiesheng.com/result.jsp?keyword=%E5%85%AC%E5%8A%A1%E5%91%98+OR+%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D&do=2" target="_blank"><strong>公务员</strong></a></li>
+			<li><a href="/major/" target="_blank"><strong>分类求职</strong></a></li>
+			<li><a href="http://deadline.yingjiesheng.com/" target="_blank"><strong>网申截止</strong></a></li>
+			<li><a href="http://vip.yingjiesheng.com/weixin/" target="_blank"><strong>微信</strong></a></li>
+			<li class="last"><a href="http://vip.yingjiesheng.com/newbook/" target="_blank" class="linkEmphasis"><strong>求职书</strong></a></li>
+		</ul>
+		<img src="http://static1.yingjiesheng.net/html/images/icon_hot2.gif" class="menuHot" title="热" />
+	</div>
+<div class="location">
+	<div class="searchForm"><script src="http://static1.yingjiesheng.net/cache/scripts/location_top.js" type="text/javascript"></script></div>
+	当前位置：<a href="/" >首页</a> &raquo; 全职推荐信息导读
+</div>
+
+<script src="http://static1.yingjiesheng.net/cache/scripts/commend_job_top.js" type="text/javascript"></script>
+<div id="subNav">
+	<script src="http://static1.yingjiesheng.net/cache/scripts/commend_job_full_list_left.js" type="text/javascript"></script>
+	
+<div class="subAd">
+			<div style="border:1px solid #C1E0FF; width: 188px; text-align:center;" >
+<script type="text/javascript">
+/*160*560，创建于2012-12-21*/
+var cpro_id = "u1168282";
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+				<div class="box hotSearch">
+		<h3><a href="/industry/index.html" >行业招聘导航：</a></h3>
+		<ul>
+		<li><a href="/industry/index_13.html" target="_blank">银行/投资公司</a></li>
+		<li><a href="/industry/index_19.html" target="_blank">建筑/房地产/工程建设</a></li>
+		<li><a href="/industry/index_1.html" target="_blank">机械/电气设备/自动化/重工/轻工</a></li>
+		<li><a href="/industry/index_2.html" target="_blank">汽车行业(整车及零部件设计生产商) </a></li>
+		<li><a href="/industry/index_3.html" target="_blank">石油/钢铁/电力/能源/煤矿</a></li>
+		<li><a href="/industry/index_4.html" target="_blank">化工/生物/制药/医疗/农林/畜牧/养殖</a></li>
+		<li><a href="/industry/index_5.html" target="_blank">交通运输/物流仓储</a></li>
+		<li><a href="/industry/index_6.html" target="_blank">仪器仪表/电器/家电/电子类</a></li>
+		<li><a href="/industry/index_7.html" target="_blank">移动通信/电信运营、增值服务</a></li>
+		<li><a href="/industry/index_8.html" target="_blank">通信设备/网络设备</a></li>
+		<li><a href="/industry/index_9.html" target="_blank">芯片/电子技术/半导体/集成电路</a></li>
+		<li><a href="/industry/index_10.html" target="_blank">计算机硬件</a></li>
+		<li><a href="/industry/index_11.html" target="_blank">计算机软件</a></li>
+		<li><a href="/industry/index_12.html" target="_blank">互联网/电子商务(提供互联网服务或电子商务类企业) </a></li>
+		<li><a href="/industry/index_14.html" target="_blank">证券/基金/保险</a></li>
+		<li><a href="/industry/index_15.html" target="_blank">会计师事务所/财务公司</a></li>
+		<li><a href="/industry/index_16.html" target="_blank">咨询公司/法律</a></li>
+		<li><a href="/industry/index_17.html" target="_blank">消费品/零售/服装/家具/贸易</a></li>
+		<li><a href="/industry/index_18.html" target="_blank">媒体/广告/旅游/公关/文化/影视/酒店/会展</a></li>
+		<li><a href="/industry/index_20.html" target="_blank">教育/国家机关/高校/研究所/事业单位</a></li>
+		</ul>
+</div>
+
+
+				<div style="border:1px solid #C1E0FF; width: 188px; text-align:center;" >
+<script src="http://topic.yingjiesheng.com/plus/js/othercity_left1.js" type="text/javascript"></script>
+</div>
+		</div></div>
+<div id="mainNav">
+	<!-- Baidu Button BEGIN -->
+			<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style="float:right; padding:5px 10px 5px 0;">
+				<span class="bds_more">分享收藏</span>
+				<a class="bds_qzone">QQ空间</a>
+				<a class="bds_tsina">新浪微博</a>
+				<a class="bds_tqq">腾讯微博</a>
+				<a class="bds_renren">人人网</a>
+				<a class="shareCount"></a>
+			</div>
+		<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=11526" ></script>
+		<script type="text/javascript" id="bdshell_js"></script>
+		<script type="text/javascript">
+			document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+		</script>
+	<!-- Baidu Button END -->
+	<h2 style="margin-top: 5px;">全职推荐信息导读</h2>
+	<div class="jobList">
+		<div class="page">共有记录：76368 条 <a href="/commend-fulltime-1.html" title="first page">[首页]</a>&nbsp;<a href="/commend-fulltime-3.html" title="previous page">上一页</a>&nbsp;<a href="/commend-fulltime-1.html" title="page 1">1</a>&nbsp;<a href="/commend-fulltime-2.html" title="page 2">2</a>&nbsp;<a href="/commend-fulltime-3.html" title="page 3">3</a>&nbsp;<span class="strong">4</span>&nbsp;<a href="/commend-fulltime-5.html" title="page 5">5</a>&nbsp;<a href="/commend-fulltime-6.html" title="page 6">6</a>&nbsp;<a href="/commend-fulltime-7.html" title="page 7">7</a>&nbsp;<a href="/commend-fulltime-8.html" title="page 8">8</a>&nbsp;<a href="/commend-fulltime-9.html" title="page 9">9</a>&nbsp;<a href="/commend-fulltime-10.html" title="page 10">10</a>&nbsp;&nbsp;<a href="/commend-fulltime-5.html" title="next page">下一页</a>&nbsp;<a href="/commend-fulltime-510.html" title="last page">[末页]</a></div>
+
+		<table cellpadding="0" cellspacing="0">
+			<tr><td colspan="2">
+
+<script src="http://topic.yingjiesheng.com/plus/js/city_top_list.js" type="text/javascript"></script>
+
+			</td></tr>
+			<script src="http://static1.yingjiesheng.net/cache/scripts/commend_job_full_list_top.js" type="text/javascript"></script>
+						<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-295.html" target="_blank"><span style="color: #008000;">河南</span>洛阳嵩县乡镇事业单位2016定向招聘工作人员</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-284.html" target="_blank"><span style="color: #008000;">苏州</span>博众2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-276.html" target="_blank"><span style="color: #008000;">北京</span>北京航天泰坦科技股份有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-275.html" target="_blank"><span style="color: #008000;">全国</span>深圳市茁壮网络股份有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-274.html" target="_blank"><span style="color: #008000;">深圳</span>深圳市吉祥腾达科技有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-270.html" target="_blank"><span style="color: #008000;">武汉</span>武汉白虹软件2016招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-265.html" target="_blank"><span style="color: #008000;">湖北</span>湖北省地质局所属事业单位短缺专业人才专项2017公开招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-258.html" target="_blank"><span style="color: #008000;">全国</span>和麦贺达集团2016招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-241.html" target="_blank"><span style="color: #008000;">唐山</span>唐山钢铁国际工程技术股份有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-240.html" target="_blank"><span style="color: #008000;">深圳</span>新产业生物（Snibe） 2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-203.html" target="_blank"><span style="color: #008000;">上海|南京|苏州|扬州|其它</span>哥弟集团2016招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-196.html" target="_blank"><span style="color: #008000;">济南</span>山东省远大网络多媒体股份有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-394.html" target="_blank"><span style="color: #008000;">全国</span>景瑞地产2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-190.html" target="_blank"><span style="color: #008000;">肇庆</span>唯品会（肇庆）电子商务有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-181.html" target="_blank"><span style="color: #008000;">武汉</span>烽火通信科技股份有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-178.html" target="_blank"><span style="color: #008000;">全国</span>中国联合网络通信有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-176.html" target="_blank"><span style="color: #008000;">上海|北京|广州|其它</span>顶点软件2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-166.html" target="_blank"><span style="color: #008000;">江苏</span>上能电气股份有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-165.html" target="_blank"><span style="color: #008000;">上海|深圳|嘉兴|西安</span>闻泰通讯2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-162.html" target="_blank"><span style="color: #008000;">广西</span>广西农业职业技术学院2016招聘编制外人员</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+									<script type="text/javascript" src="/cache/scripts/joblist_indexad_middle.js"></script>
+			<tr><td colspan="2">
+<script src="http://topic.yingjiesheng.com/plus/js/city_middle_list.js" type="text/javascript"></script>
+			</td></tr>
+									<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-161.html" target="_blank"><span style="color: #008000;">北京</span>北京灵图软件技术有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-158.html" target="_blank"><span style="color: #008000;">安徽</span>深圳玩美创游科技有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-157.html" target="_blank"><span style="color: #008000;">北京|南京|厦门</span>厦门特宝生物工程股份有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-156.html" target="_blank"><span style="color: #008000;">广东</span>大洋电机新动力科技有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-392.html" target="_blank"><span style="color: #008000;">全国</span>华硕电脑2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-384.html" target="_blank"><span style="color: #008000;">青海</span>青海移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5775&RedirectUrl=http%3A%2F%2Fhr.meizu.com%2Fcampus.html" target="_blank"><span style="color: #008000;">全国</span>魅族2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-06</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-386.html" target="_blank"><span style="color: #008000;">北京南京郑州</span>中国移动在线服务有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-385.html" target="_blank"><span style="color: #008000;">杭州成都</span>中国移动杭州研发中心2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-383.html" target="_blank"><span style="color: #008000;">宁夏</span>宁夏移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-382.html" target="_blank"><span style="color: #008000;">陕西</span>陕西移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-381.html" target="_blank"><span style="color: #008000;">西藏</span>西藏移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-380.html" target="_blank"><span style="color: #008000;">贵州</span>贵州移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-379.html" target="_blank"><span style="color: #008000;">海南</span>海南移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-378.html" target="_blank"><span style="color: #008000;">江苏</span>江苏移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-377.html" target="_blank"><span style="color: #008000;">黑龙江</span>黑龙江移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-376.html" target="_blank"><span style="color: #008000;">福建</span>招商银行厦门分行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-375.html" target="_blank"><span style="color: #008000;">山东</span>招商银行济南分行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-374.html" target="_blank"><span style="color: #008000;">全国</span>招商银行昆明分行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-373.html" target="_blank"><span style="color: #008000;">天津</span>招商银行天津分行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-372.html" target="_blank"><span style="color: #008000;">山西</span>招商银行太原分行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-371.html" target="_blank"><span style="color: #008000;">青海</span>招商银行西宁分行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-369.html" target="_blank"><span style="color: #008000;">吉林</span>吉林移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-368.html" target="_blank"><span style="color: #008000;">内蒙古</span>内蒙古移动2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-352.html" target="_blank"><span style="color: #008000;">北京上海天津深圳</span>中芯国际2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-346.html" target="_blank"><span style="color: #008000;">全国</span>TE Connectivity2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-154.html" target="_blank"><span style="color: #008000;">上海</span>上海链家房地产经纪有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-146.html" target="_blank"><span style="color: #008000;">全国</span>中交公路规划设计院有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-339.html" target="_blank"><span style="color: #008000;">合肥</span>阳光电源2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-144.html" target="_blank"><span style="color: #008000;">安徽</span>安徽大学出版社2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-338.html" target="_blank"><span style="color: #008000;">安徽</span>中国电子科技集团公司第三十八研究所2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-132.html" target="_blank"><span style="color: #008000;">青岛</span>山东省科学院激光研究所青岛研发中心2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-130.html" target="_blank"><span style="color: #008000;">全国</span>中国移动通信集团公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-129.html" target="_blank"><span style="color: #008000;">大连</span>亿达物业2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-123.html" target="_blank"><span style="color: #008000;">武汉|上海|河北|其它</span>周黑鸭2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-118.html" target="_blank"><span style="color: #008000;">江苏</span>济川药业2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-336.html" target="_blank"><span style="color: #008000;">宁夏</span>大唐宁夏分公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-335.html" target="_blank"><span style="color: #008000;">上海|北京</span> <span style="color: #008000;">北京|上海</span>雅培成熟药品部2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-332.html" target="_blank"><span style="color: #008000;">全国</span>中国三星2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-000.html" target="_blank"><span style="color: #008000;">上海|北京|深圳</span>甫瀚咨询2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-971.html" target="_blank"><span style="color: #008000;">广州</span>广汽丰田汽车有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-331.html" target="_blank"><span style="color: #008000;">陕西</span>大唐陕西发电有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-959.html" target="_blank"><span style="color: #008000;">江苏</span>江苏质量技术监督局事业单位2016招聘高层次人才</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-954.html" target="_blank"><span style="color: #008000;">无锡</span>江苏无锡宜兴市文广新局下属部分单位2016招聘工作人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-952.html" target="_blank"><span style="color: #008000;">江苏</span>江苏常州体育局下属事业单位2016招聘工作人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-940.html" target="_blank"><span style="color: #008000;">全国</span>广州志鸿物流有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-939.html" target="_blank"><span style="color: #008000;">上海|沈阳|大连</span>先锋&middot;商泰2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-329.html" target="_blank"><span style="color: #008000;">全国</span>大唐环境产业集团股份有限公司所属企业2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691563.html" target="_blank"><span style="color: #008000;">上海</span>澜起科技（上海）有限公司招聘HR Assistant 人力资源助理</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691575.html" target="_blank"><span style="color: #008000;">上海</span>上海东软载波微电子有限公司招聘会计</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-250.html" target="_blank"><span style="color: #008000;">甘肃</span>大唐甘肃发电有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691613.html" target="_blank"><span style="color: #008000;">上海</span>上海红星美凯龙企业发展有限公司招聘出纳（2016应届生）</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691631.html" target="_blank"><span style="color: #008000;">南京</span>南京巨鲨显示科技有限公司招聘财务专员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-249.html" target="_blank"><span style="color: #008000;">黑龙江</span>大唐黑龙江发电有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691638.html" target="_blank"><span style="color: #008000;">上海</span>上海财安金融服务集团股份有限公司招聘人力资源管培生</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691652.html" target="_blank"><span style="color: #008000;">上海</span>上海中建三益资产管理有限公司招聘人力资源助理</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_687068.html" target="_blank"><span style="color: #008000;">上海</span>上海阔界商务咨询有限公司招聘国际项目销售 进口食品 全职或者一周五天实习</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-919.html" target="_blank"><span style="color: #008000;">沈阳</span>招商银行股份有限公司沈阳分行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-927.html" target="_blank"><span style="color: #008000;">四川</span>雅砻江流域水电开发有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-233.html" target="_blank"><span style="color: #008000;">全国</span>红杉中国联合真格基金成员企业2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-913.html" target="_blank"><span style="color: #008000;">厦门</span>厦门幻世网络科技有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-912.html" target="_blank"><span style="color: #008000;">福建</span>福建联合石油化工有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-909.html" target="_blank"><span style="color: #008000;">深圳</span>ASML-Brion阿斯麦-睿初科技2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-906.html" target="_blank"><span style="color: #008000;">全国</span>基恩士（KEYENCE）2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-898.html" target="_blank"><span style="color: #008000;">深圳|其它</span>深圳航空2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-897.html" target="_blank"><span style="color: #008000;">北京|杭州</span>无线生活（北京）信息技术有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-895.html" target="_blank"><span style="color: #008000;">重庆</span>重庆交通职业学院2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-335-112.html" target="_blank"><span style="color: #008000;">上海|北京|广州|深圳|武汉|南京|天津|成都|其它</span> <span style="color: #008000;">全国</span>赢创2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-335-108.html" target="_blank"><span style="color: #008000;">上海|北京|武汉|其它</span> <span style="color: #008000;">北京|上海|武汉|西安|沈阳</span>四维图新2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-796.html" target="_blank"><span style="color: #008000;">苏州</span>苏州贝尔塔数据技术有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691207.html" target="_blank"><span style="color: #008000;">北京</span>搜狐公司招聘会计（AP/AR）</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691208.html" target="_blank"><span style="color: #008000;">天津</span>新纪元科技（天津）有限公司招聘人事专员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691213.html" target="_blank"><span style="color: #008000;">北京</span>北京锐安科技有限公司招聘人力资源专员（培训方向）</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691257.html" target="_blank"><span style="color: #008000;">上海</span>苏州泓域股权投资管理企业（有限合伙）招聘会计助理</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691272.html" target="_blank"><span style="color: #008000;">北京</span>合众资产管理股份有限公司招聘财务助理</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691286.html" target="_blank"><span style="color: #008000;">上海</span>滔搏体育（上海）有限公司招聘出纳</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691343.html" target="_blank"><span style="color: #008000;">北京</span>玛泽咨询(上海)有限公司北京分公司招聘Junior Accountant 初级会计</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/company_9175703.html" target="_blank"><span style="color: #008000;">上海北京深圳成都</span>北京远旭股权投资基金管理有限公司招聘资本运营事业部-探海者-投资分析师(J10591)</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691423.html" target="_blank"><span style="color: #008000;">沈阳</span>佛吉亚（上海）管理有限公司招聘Purchasing Intern 采购实习生</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691430.html" target="_blank"><span style="color: #008000;">上海</span>橡乐网络科技（上海）有限公司招聘招聘专员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_691465.html" target="_blank"><span style="color: #008000;">南京济南青岛西安上海</span>上海中建东孚物业管理有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5663&RedirectUrl=http%3A%2F%2Fgame.campus.163.com%2Fxiaoyuan%2Fzhiwei%2Fzaixian%2Fjsl%2F2016%2F07%2F18%2F14299_628220.html%23jobList" target="_blank"><span style="color: #008000;">全国</span>网易游戏2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5653&RedirectUrl=http%3A%2F%2Fcmbcc.zhiye.com%2F" target="_blank"><span style="color: #008000;">上海</span>招商银行信用卡中心2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_687329.html" target="_blank"><span style="color: #008000;">深圳</span>深圳力合金融控股股份有限公司招聘投融资项目经理&mdash;&mdash;培训生</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_687798.html" target="_blank"><span style="color: #008000;">北京</span>鸿泰鼎石资产管理有限责任公司北京分公司招聘资产管理岗</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_608727.html" target="_blank"><span style="color: #008000;">北京</span>北京泛涵投资管理有限公司招聘交易员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://my.yingjiesheng.com/job_483801.html" target="_blank"><span style="color: #008000;">北京</span>北京丽兹行房地产投资顾问有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-850.html" target="_blank"><span style="color: #008000;">北京|上海|武汉</span>兆芯2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-846.html" target="_blank"><span style="color: #008000;">全国</span>神州信息2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-723.html" target="_blank"><span style="color: #008000;">佛山</span>海天味业2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-722.html" target="_blank"><span style="color: #008000;">惠州</span>惠州市德赛电池有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-843.html" target="_blank"><span style="color: #008000;">上海|南京</span>福特汽车2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-705.html" target="_blank"><span style="color: #008000;">全国</span>玄武科技2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-700.html" target="_blank"><span style="color: #008000;">东莞</span>中科院高能所东莞分部2016年度博士后招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-696.html" target="_blank"><span style="color: #008000;">厦门</span>厦门飞博共创网络科技股份有限公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-842.html" target="_blank"><span style="color: #008000;">广州</span>三七互娱2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-680.html" target="_blank"><span style="color: #008000;">深圳</span>金蝶集团2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-679.html" target="_blank"><span style="color: #008000;">深圳|江苏|其它</span>无锡深南电路有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-677.html" target="_blank"><span style="color: #008000;">南京</span>苏宁1200工程十五期管培生2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-672.html" target="_blank"><span style="color: #008000;">上海|苏州|深圳</span>上海东软载波微电子有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-670.html" target="_blank"><span style="color: #008000;">广东</span>惠州至精精密技术有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-668.html" target="_blank"><span style="color: #008000;">全国</span>华宝国际控股有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-834.html" target="_blank"><span style="color: #008000;">广州郑州大连襄阳</span>东风日产2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-661.html" target="_blank"><span style="color: #008000;">北京</span>中交路桥建设有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-657.html" target="_blank"><span style="color: #008000;">武汉</span>风脉能源（武汉）股份有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-654.html" target="_blank"><span style="color: #008000;">江苏</span>无锡深南电路有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-644.html" target="_blank"><span style="color: #008000;">大连</span>大连博融控股集团有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-643.html" target="_blank"><span style="color: #008000;">全国</span>拓维信息系统股份有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-636.html" target="_blank"><span style="color: #008000;">全国</span>广发银行2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-634.html" target="_blank"><span style="color: #008000;">江苏</span>昆山龙腾光电有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-631.html" target="_blank"><span style="color: #008000;">沈阳</span>东华软件股份公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5652&RedirectUrl=http%3A%2F%2Frecruitment.decathlon.com.cn%2Fschool_recruit.html%3Fhmsr%3D%25E5%25BA%2594%25E5%25B1%258A%25E7%2594%259F%25E6%25B1%2582%25E8%2581%258C%25E7%25BD%2591%26hmpl%3D%26hmcu%3D%26hmkw%3D%26hmci%3D" target="_blank"><span style="color: #008000;">全国</span>迪卡侬2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5650&RedirectUrl=http%3A%2F%2Fmaker.haier.net%2Fjingying%2Fzhaomu%3Ff%3Dyingjiesheng" target="_blank"><span style="color: #008000;">全国</span>海尔2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5632&RedirectUrl=http%3A%2F%2Fcampus.51job.com%2Fti%2Frequired_now.htm%23required_now" target="_blank"><span style="color: #008000;">全国</span>德州仪器2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5630&RedirectUrl=http%3A%2F%2Fcampus.lenovo.com.cn%2F" target="_blank"><span style="color: #008000;">全国</span>联想集团2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5622&RedirectUrl=http%3A%2F%2Fintel2017.hirede.com" target="_blank"><span style="color: #008000;">全国</span>英特尔中国2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-484.html" target="_blank"><span style="color: #008000;">上海</span>泰州市碧桂园房地产开发有限公司2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-453.html" target="_blank"><span style="color: #008000;">湖北</span>青岛海信日立空调系统有限公司武汉分公司2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="http://www.yingjiesheng.com/click.php?ID=5617&RedirectUrl=http%3A%2F%2F360campus.chinahr.com" target="_blank"><span style="color: #008000;">全国</span>360 2017校园招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-431.html" target="_blank"><span style="color: #008000;">四川</span>同济大学生命科学与技术学院龚国华课题组2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+						<tr><td height="20" colspan="2"><div class="sepr"></div></td></tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-429.html" target="_blank"><span style="color: #008000;">北京</span>北京市石景山区2016年下半年事业单位公开招聘66名工作人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-428.html" target="_blank"><span style="color: #008000;">江苏</span>常州市体育局下属事业单位2016招聘工作人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-422.html" target="_blank"><span style="color: #008000;">安徽</span>安徽省蚌埠市淮上区2016招聘16名编外聘用人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-418.html" target="_blank"><span style="color: #008000;">河南</span>河南省清丰县2016招聘100名事业单位工作人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-400.html" target="_blank"><span style="color: #008000;">广州</span>华南理工大学国家移动超声探测工程技术研究中心2016招聘合同工</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-396.html" target="_blank"><span style="color: #008000;">北京</span>中国科学院神经所脑影像中心2016招聘博士后、研究助理和技术管理人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-394.html" target="_blank"><span style="color: #008000;">沈阳</span>中国科学院沈阳应用生态研究所环境工程组2016招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-381.html" target="_blank"><span style="color: #008000;">北京</span>中国农业科学院农业部植物新品种测试（北京）分中心2016招聘4名工作人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_0">
+				<td>
+					<a href="/job-002-334-372.html" target="_blank"><span style="color: #008000;">南京</span>江苏河海大学资产经营有限公司2016财务审计岗位招聘</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<tr class="bg_1">
+				<td>
+					<a href="/job-002-334-371.html" target="_blank"><span style="color: #008000;">甘肃</span>甘肃省天水市秦州区人民医院2016招聘431名医务及工作人员</a>
+									</td>
+				<td class="date">2016-09-05</td>
+			</tr>
+												<script type="text/javascript" src="/cache/scripts/joblist_indexad_bottom.js"></script>
+			<tr><td colspan="2">
+<script src="http://topic.yingjiesheng.com/plus/js/city_bottom_list.js" type="text/javascript"></script>
+			</td></tr>
+		</table>
+
+		<div class="page">共有记录：76368 条 <a href="/commend-fulltime-1.html" title="first page">[首页]</a>&nbsp;<a href="/commend-fulltime-3.html" title="previous page">上一页</a>&nbsp;<a href="/commend-fulltime-1.html" title="page 1">1</a>&nbsp;<a href="/commend-fulltime-2.html" title="page 2">2</a>&nbsp;<a href="/commend-fulltime-3.html" title="page 3">3</a>&nbsp;<span class="strong">4</span>&nbsp;<a href="/commend-fulltime-5.html" title="page 5">5</a>&nbsp;<a href="/commend-fulltime-6.html" title="page 6">6</a>&nbsp;<a href="/commend-fulltime-7.html" title="page 7">7</a>&nbsp;<a href="/commend-fulltime-8.html" title="page 8">8</a>&nbsp;<a href="/commend-fulltime-9.html" title="page 9">9</a>&nbsp;<a href="/commend-fulltime-10.html" title="page 10">10</a>&nbsp;&nbsp;<a href="/commend-fulltime-5.html" title="next page">下一页</a>&nbsp;<a href="/commend-fulltime-510.html" title="last page">[末页]</a></div>
+	</div>
+</div>
+<div class="clear"></div>
+	<div id="footer">
+		<div class="copyInfo">
+			Copyright  &copy;前锦网络信息技术（上海）有限公司 版权所有 <span style="display:none;">			</span><br />
+			<a href="http://www.miitbeian.gov.cn" target="_blank">网站备案/许可证号：沪ICP备12015550号-13</a> | 上海市公安局徐汇分局网监中心备案编号：3101040220 		</div>
+		<script>
+		(function(){
+			var bp = document.createElement('script');
+			bp.src = '//push.zhanzhang.baidu.com/push.js';
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+		</script>
+	</div>
+</div>
+</body>
+</html>

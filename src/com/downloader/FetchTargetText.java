@@ -1,6 +1,7 @@
 package com.downloader;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -58,6 +59,57 @@ public class FetchTargetText {
 			e.printStackTrace();
 		}
 		return html;
+	}
+
+	public static String getEntity(HttpClient client, String url, HashMap<String, String> headers) {
+		return getEntity(client, url, headers, "utf-8");
+	}
+
+	public static InputStream downloadEntity(HttpClient client, String url, HashMap<String, String> headers,
+			String charset) {
+		InputStream input = null;
+		HttpGet get = new HttpGet(url);
+		if (charset == null) {
+			charset = "UTF-8";
+		}
+		if (headers != null && !headers.isEmpty()) {
+			Iterator<Entry<String, String>> iterator = headers.entrySet().iterator();
+			while (iterator.hasNext()) {
+				Entry<String, String> entry = iterator.next();
+				get.setHeader(entry.getKey(), entry.getValue());
+			}
+		}
+		RequestConfig.Builder config = RequestConfig.custom().setConnectTimeout(10 * 1000).setSocketTimeout(5 * 1000);
+		get.setConfig(config.build());
+		System.out.println("--------------------");
+		HttpResponse response = null;
+		try {
+			response = client.execute(get);
+			System.out.println("++++++++++++++++++++++");
+			// html = EntityUtils.toString(response.getEntity(), charset);
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.out.println("获取" + url + "错误" + "\r\n");
+			e.printStackTrace();
+		} finally {
+			get.abort();
+			System.out.println("*****************");
+		}
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		try {
+			input = response.getEntity().getContent();
+		} catch (UnsupportedOperationException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return input;
+
 	}
 
 	public static String postEntity(HttpClient client, String url, List<NameValuePair> list, String json,

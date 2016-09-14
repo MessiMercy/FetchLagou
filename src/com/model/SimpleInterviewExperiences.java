@@ -12,6 +12,7 @@ public class SimpleInterviewExperiences {
 	private int describeScore;// 描述相符星级
 	private int interviewerScore;// 面试星级
 	private int companyScore;// 公司星级
+	private SimpleCompanyInfo simpleCompanyInfo;
 
 	public String toString() {
 		StringBuffer result = new StringBuffer();
@@ -117,6 +118,14 @@ public class SimpleInterviewExperiences {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public SimpleCompanyInfo getSimpleCompanyInfo() {
+		return simpleCompanyInfo;
+	}
+
+	public void setSimpleCompanyInfo(SimpleCompanyInfo simpleCompanyInfo) {
+		this.simpleCompanyInfo = simpleCompanyInfo;
 	}
 
 }
